@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Gourmet</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<h1>Restaurante Gourmet</h1>
+	<div class="contenedor">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#menu">Menú</a></li>
+					<li><a href="#reservas">Reservas</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="inicio">
+				<h2>Bienvenido</h2>
+				<img src="/imagenes/1.webp" alt="Interior del restaurante" class="image-banner">
+				<p>Descubre sabores únicos en nuestro restaurante gourmet.</p>
+			</section>
+
+			<section id="menu">
+				<h2>Menú</h2>
+				<img src="/imagenes/2.webp" alt="Mesa servida con platos gourmet" class="image-banner">
+				<table>
+					<thead>
+						<tr>
+							<th>Platillo</th>
+							<th>Descripción</th>
+							<th>Precio</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Ensalada César</td>
+							<td>Fresca mezcla de lechugas con aderezo césar y crutones.</td>
+							<td>$10</td>
+						</tr>
+						<tr>
+							<td>Risotto de Mariscos</td>
+							<td>Arroz cremoso con selección de mariscos frescos.</td>
+							<td>$18</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="reservas">
+				<h2>Reservas</h2>
+				<img src="/imagenes/3.jpg" alt="Mesa reservada en el restaurante" class="image-banner">
+				<form action="procesar.php" method="post">
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" name="nombre" required>
+
+					<label for="fecha">Fecha:</label>
+					<input type="date" id="fecha" name="fecha" required>
+
+					<label for="hora">Hora:</label>
+					<input type="time" id="hora" name="hora" required>
+
+					<button type="submit">Reservar</button>
+				</form>
+			</section>
+
+			<section id="contacto">
+				<h2>Contacto</h2>
+				<img src="/imagenes/4.webp" alt="Fachada del restaurante" class="image-banner">
+				<p>Ubicación: Avenida Principal 123, Ciudad Gourmet.</p>
+				<p>Teléfono: (123) 456-7890</p>
+			</section>
+		</main>
+	</div>
+    <footer>
+        <p>&copy; 2024 Restaurante Gourmet</p>
+    </footer>
+</body>
+</html>
